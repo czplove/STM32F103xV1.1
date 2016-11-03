@@ -1,0 +1,3 @@
+都是英语，我翻译一下，core_cm3.h文件太老了，2009年的，与新版本的IAR6.3不兼容，IAR 6.3用的是2011年的，使用IAR自带的就行了，我试过了，没问题。
+1，把老的core_cm3.h去掉，删除，或者改成core_cm3.h.old。
+2，Project -> Options -> General Options -> Library Configuration -> Use CMSIS，右下角的选项中选择 use CMSIS

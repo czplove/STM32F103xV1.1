@@ -1,0 +1,968 @@
+###############################################################################
+#
+# IAR ELF Linker V7.20.2.7424/W32 for ARM                 08/Sep/2015  20:22:04
+# Copyright 2007-2014 IAR Systems AB.
+#
+#    Output file  =  
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Exe\ext.out
+#    Map file     =  
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\List\ext.map
+#    Command line =  
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\bsp.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\COMUSE.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\cortexm3_macro.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\diskio.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\es705_escore.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\escore-i2c.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\escore-uart-common.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\escore-uart.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\escore-vs.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\escore.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\fan.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\ff.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\GloblDef.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\I2C.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\init.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\main.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\mic.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\pm.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\printf.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\sci0.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\sci1.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\SimulationSpi.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\SPI_Flash.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\stm32f10x_adc.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\stm32f10x_dma.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\stm32f10x_exti.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\stm32f10x_flash.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\stm32f10x_gpio.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\stm32f10x_i2c.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\stm32f10x_it.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\stm32f10x_iwdg.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\stm32f10x_lib.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\stm32f10x_nvic.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\stm32f10x_rcc.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\stm32f10x_spi.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\stm32f10x_systick.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\stm32f10x_tim.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\stm32f10x_usart.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\stm32f10x_vector.o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj\voc.o
+#        --redirect _Printf=_PrintfFull --redirect _Scanf=_ScanfFull -o
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Exe\ext.out --map
+#        F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\List\ext.map
+#        --config
+#        F:\zhao\item20150407\STM32F103xV1.0\DreamFlows\stm32f103xE.icf
+#        --semihosting --entry __iar_program_start --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor                     = *
+__Heap_Handler                = Basic
+__SystemLibrary               = DLib
+__dlib_dynamic_initialization = normal
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x0807ffff] { ro };
+"P2":  place in [from 0x20000000 to 0x2000ffff] { rw, block CSTACK, block HEAP };
+
+  Section             Kind        Address    Size  Object
+  -------             ----        -------    ----  ------
+"A1":                                       0x130
+  .intvec             const    0x08000000   0x130  stm32f10x_vector.o [1]
+                             - 0x08000130   0x130
+
+"P1":                                      0x8983
+  .text               ro code  0x08000130  0x18d0  ff.o [1]
+  .text               ro code  0x08001a00    0x98  diskio.o [1]
+  .text               ro code  0x08001a98   0x2dc  SPI_Flash.o [1]
+  .text               ro code  0x08001d74   0x198  stm32f10x_gpio.o [1]
+  .text               ro code  0x08001f0c   0x35c  stm32f10x_rcc.o [1]
+  .text               ro code  0x08002268    0x7c  stm32f10x_spi.o [1]
+  .text               ro code  0x080022e4  0x114e  xprintffull.o [3]
+  .text               ro code  0x08003432    0x20  xmbtowc.o [3]
+  .text               ro code  0x08003452    0x22  zero_init3.o [5]
+  .text               ro code  0x08003474    0x16  strchr.o [5]
+  .text               ro code  0x0800348c    0x36  strlen.o [5]
+  .text               ro code  0x080034c4    0x58  memchr.o [5]
+  .text               ro code  0x0800351c     0xa  xmbcurmax.o [3]
+  .text               ro code  0x08003528    0xb0  xxmemxmalloc.o [3]
+  .text               ro code  0x080035d8    0x1a  xwctomb.o [3]
+  .text               ro code  0x080035f4    0x76  ABImemcpy_unaligned.o [5]
+  .text               ro code  0x0800366c    0x80  xxmemxfree.o [3]
+  .text               ro code  0x080036ec    0xee  I64DivMod.o [5]
+  .text               ro code  0x080037da    0x42  xdnorm.o [4]
+  .text               ro code  0x0800381c    0x2e  DblCmpLe.o [4]
+  .text               ro code  0x0800384c    0x2e  DblCmpGe.o [4]
+  .text               ro code  0x0800387c   0x10c  xdscale.o [4]
+  .text               ro code  0x08003988    0x58  DblToI32.o [4]
+  .text               ro code  0x080039e0    0x30  I32ToDbl.o [4]
+  .text               ro code  0x08003a10   0x180  DblSub.o [4]
+  .text               ro code  0x08003b90   0x1a2  DblMul.o [4]
+  .text               ro code  0x08003d34   0x246  DblDiv.o [4]
+  .text               ro code  0x08003f7c    0x6c  localeconv.o [3]
+  .text               ro code  0x08003fe8     0xe  div.o [3]
+  .text               ro code  0x08003ff8    0x14  setlocale.o [3]
+  .text               ro code  0x0800400c    0x60  xencoding_sb.o [3]
+  .text               ro code  0x0800406c    0x2c  xgetmemchunk.o [3]
+  .text               ro code  0x08004098     0x2  I64DivZer.o [5]
+  .text               ro code  0x0800409c    0xd4  DblAdd.o [4]
+  .text               ro code  0x08004170     0x2  xtls.o [3]
+  .text               ro code  0x08004174   0x97c  es705_escore.o [1]
+  .text               ro code  0x08004af0    0x24  printf.o [3]
+  .text               ro code  0x08004b14    0x66  ABImemset.o [5]
+  .text               ro code  0x08004b7c   0x6dc  escore.o [1]
+  .text               ro code  0x08005258   0x4e4  escore-vs.o [1]
+  .text               ro code  0x0800573c   0x438  escore-i2c.o [1]
+  .text               ro code  0x08005b74   0x7e4  escore-uart.o [1]
+  .text               ro code  0x08006358   0x148  main.o [1]
+  .text               ro code  0x080064a0   0x248  stm32f10x_i2c.o [1]
+  .text               ro code  0x080066e8   0x278  escore-uart-common.o [1]
+  .text               ro code  0x08006960   0x3bc  bsp.o [1]
+  .text               ro code  0x08006d1c    0xac  I2C.o [1]
+  .text               ro code  0x08006dc8     0x6  ABImemclr4.o [5]
+  .text               ro code  0x08006dce    0x10  main.o [1]
+  .text               ro code  0x08006de0   0x1e2  stm32f10x_usart.o [1]
+  .text               ro code  0x08006fc4    0x44  stm32f10x_flash.o [1]
+  .text               ro code  0x08007008   0x164  stm32f10x_nvic.o [1]
+  .text               ro code  0x0800716c    0x84  stm32f10x_systick.o [1]
+  .text               ro code  0x080071f0    0xd4  stm32f10x_exti.o [1]
+  .text               ro code  0x080072c4    0x32  ABImemset48.o [5]
+  .text               ro code  0x080072f6    0x2c  strstr.o [3]
+  .text               ro code  0x08007324   0x1b6  stm32f10x_it.o [1]
+  .text               ro code  0x080074dc    0x4c  stm32f10x_dma.o [1]
+  .text               ro code  0x08007528    0x3a  stm32f10x_tim.o [1]
+  .text               ro code  0x08007562    0xd2  packbits_init.o [5]
+  .text               ro code  0x08007634     0x6  abort.o [3]
+  .text               ro code  0x0800763c    0x14  exit.o [6]
+  .text               ro code  0x08007650    0x7a  cortexm3_macro.o [1]
+  .rodata             const    0x080076cc    0x34  escore-vs.o [1]
+  .rodata             const    0x08007700    0x30  es705_escore.o [1]
+  .rodata             const    0x08007730    0x30  escore-vs.o [1]
+  .rodata             const    0x08007760    0x30  escore.o [1]
+  .rodata             const    0x08007790    0x2c  escore-uart.o [1]
+  .rodata             const    0x080077bc    0x2c  escore-vs.o [1]
+  .rodata             const    0x080077e8    0x2c  escore.o [1]
+  .rodata             const    0x08007814    0x28  es705_escore.o [1]
+  .rodata             const    0x0800783c    0x28  es705_escore.o [1]
+  .rodata             const    0x08007864    0x28  escore-i2c.o [1]
+  .rodata             const    0x0800788c    0x28  escore-i2c.o [1]
+  .rodata             const    0x080078b4    0x28  escore-uart.o [1]
+  .rodata             const    0x080078dc    0x28  escore-uart.o [1]
+  .rodata             const    0x08007904    0x28  escore-uart.o [1]
+  .rodata             const    0x0800792c    0x28  escore-uart.o [1]
+  .rodata             const    0x08007954    0x28  escore-uart.o [1]
+  .rodata             const    0x0800797c    0x28  escore-uart.o [1]
+  .rodata             const    0x080079a4    0x28  escore-vs.o [1]
+  .rodata             const    0x080079cc    0x28  escore.o [1]
+  .rodata             const    0x080079f4    0x28  escore.o [1]
+  .text               ro code  0x08007a1c    0x28  printf.o [1]
+  .text               ro code  0x08007a44    0x28  data_init.o [5]
+  .rodata             const    0x08007a6c    0x24  es705_escore.o [1]
+  .rodata             const    0x08007a90    0x24  es705_escore.o [1]
+  .rodata             const    0x08007ab4    0x24  es705_escore.o [1]
+  .rodata             const    0x08007ad8    0x24  es705_escore.o [1]
+  .rodata             const    0x08007afc    0x24  es705_escore.o [1]
+  .rodata             const    0x08007b20    0x24  escore-i2c.o [1]
+  .rodata             const    0x08007b44    0x24  escore-i2c.o [1]
+  .rodata             const    0x08007b68    0x24  escore-i2c.o [1]
+  .rodata             const    0x08007b8c    0x24  escore-uart.o [1]
+  .rodata             const    0x08007bb0    0x24  escore-uart.o [1]
+  .rodata             const    0x08007bd4    0x24  escore-uart.o [1]
+  .rodata             const    0x08007bf8    0x24  escore-vs.o [1]
+  .rodata             const    0x08007c1c    0x24  escore.o [1]
+  .rodata             const    0x08007c40    0x24  escore.o [1]
+  .rodata             const    0x08007c64    0x24  escore.o [1]
+  .rodata             const    0x08007c88    0x24  escore.o [1]
+  .rodata             const    0x08007cac    0x24  escore.o [1]
+  .rodata             const    0x08007cd0    0x24  escore.o [1]
+  .iar.init_table     const    0x08007cf4    0x2c  - Linker created -
+  .rodata             const    0x08007d20    0x20  es705_escore.o [1]
+  .rodata             const    0x08007d40    0x20  es705_escore.o [1]
+  .rodata             const    0x08007d60    0x20  es705_escore.o [1]
+  .rodata             const    0x08007d80    0x20  es705_escore.o [1]
+  .rodata             const    0x08007da0    0x20  es705_escore.o [1]
+  .rodata             const    0x08007dc0    0x20  es705_escore.o [1]
+  .rodata             const    0x08007de0    0x20  es705_escore.o [1]
+  .rodata             const    0x08007e00    0x20  es705_escore.o [1]
+  .rodata             const    0x08007e20    0x20  es705_escore.o [1]
+  .rodata             const    0x08007e40    0x20  es705_escore.o [1]
+  .rodata             const    0x08007e60    0x20  es705_escore.o [1]
+  .rodata             const    0x08007e80    0x20  es705_escore.o [1]
+  .rodata             const    0x08007ea0    0x20  escore-i2c.o [1]
+  .rodata             const    0x08007ec0    0x20  escore-uart-common.o [1]
+  .rodata             const    0x08007ee0    0x20  escore-uart-common.o [1]
+  .rodata             const    0x08007f00    0x20  escore-uart.o [1]
+  .rodata             const    0x08007f20    0x20  escore-uart.o [1]
+  .rodata             const    0x08007f40    0x20  escore-uart.o [1]
+  .rodata             const    0x08007f60    0x20  escore-uart.o [1]
+  .rodata             const    0x08007f80    0x20  escore-uart.o [1]
+  .rodata             const    0x08007fa0    0x20  escore-vs.o [1]
+  .rodata             const    0x08007fc0    0x20  escore-vs.o [1]
+  .rodata             const    0x08007fe0    0x20  escore-vs.o [1]
+  .rodata             const    0x08008000    0x20  escore-vs.o [1]
+  .rodata             const    0x08008020    0x20  escore-vs.o [1]
+  .rodata             const    0x08008040    0x20  escore-vs.o [1]
+  .rodata             const    0x08008060    0x20  escore-vs.o [1]
+  .rodata             const    0x08008080    0x20  escore-vs.o [1]
+  .rodata             const    0x080080a0    0x20  escore-vs.o [1]
+  .rodata             const    0x080080c0    0x20  escore.o [1]
+  .rodata             const    0x080080e0    0x20  escore.o [1]
+  .rodata             const    0x08008100    0x20  escore.o [1]
+  .rodata             const    0x08008120    0x20  escore.o [1]
+  .rodata             const    0x08008140    0x20  escore.o [1]
+  .rodata             const    0x08008160    0x20  escore.o [1]
+  .rodata             const    0x08008180    0x20  escore.o [1]
+  .rodata             const    0x080081a0    0x1c  es705_escore.o [1]
+  .rodata             const    0x080081bc    0x1c  es705_escore.o [1]
+  .rodata             const    0x080081d8    0x1c  es705_escore.o [1]
+  .rodata             const    0x080081f4    0x1c  es705_escore.o [1]
+  .rodata             const    0x08008210    0x1c  es705_escore.o [1]
+  .rodata             const    0x0800822c    0x1c  es705_escore.o [1]
+  .rodata             const    0x08008248    0x1c  es705_escore.o [1]
+  .rodata             const    0x08008264    0x1c  es705_escore.o [1]
+  .rodata             const    0x08008280    0x1c  escore-i2c.o [1]
+  .rodata             const    0x0800829c    0x1c  escore-i2c.o [1]
+  .rodata             const    0x080082b8    0x1c  escore-i2c.o [1]
+  .rodata             const    0x080082d4    0x1c  escore-uart-common.o [1]
+  .rodata             const    0x080082f0    0x1c  escore-uart.o [1]
+  .rodata             const    0x0800830c    0x1c  escore-uart.o [1]
+  .rodata             const    0x08008328    0x1c  escore-vs.o [1]
+  .rodata             const    0x08008344    0x1c  escore-vs.o [1]
+  .rodata             const    0x08008360    0x1c  escore-vs.o [1]
+  .rodata             const    0x0800837c    0x1c  escore-vs.o [1]
+  .rodata             const    0x08008398    0x1c  escore-vs.o [1]
+  .rodata             const    0x080083b4    0x1c  escore-vs.o [1]
+  .rodata             const    0x080083d0    0x1c  escore-vs.o [1]
+  .rodata             const    0x080083ec    0x1c  escore-vs.o [1]
+  .rodata             const    0x08008408    0x1c  escore.o [1]
+  .rodata             const    0x08008424    0x1c  escore.o [1]
+  .rodata             const    0x08008440    0x1c  escore.o [1]
+  .rodata             const    0x0800845c    0x1c  main.o [1]
+  .rodata             const    0x08008478    0x1c  main.o [1]
+  .rodata             const    0x08008494    0x1c  main.o [1]
+  .rodata             const    0x080084b0    0x1c  main.o [1]
+  .text               ro code  0x080084cc    0x1a  cmain.o [5]
+  .text               ro code  0x080084e6     0x4  low_level_init.o [3]
+  .text               ro code  0x080084ea     0x4  exit.o [3]
+  .text               ro code  0x080084f0     0xa  cexit.o [5]
+  .rodata             const    0x080084fc    0x18  es705_escore.o [1]
+  .rodata             const    0x08008514    0x18  es705_escore.o [1]
+  .rodata             const    0x0800852c    0x18  es705_escore.o [1]
+  .rodata             const    0x08008544    0x18  es705_escore.o [1]
+  .rodata             const    0x0800855c    0x18  es705_escore.o [1]
+  .rodata             const    0x08008574    0x18  es705_escore.o [1]
+  .rodata             const    0x0800858c    0x18  es705_escore.o [1]
+  .rodata             const    0x080085a4    0x18  escore-i2c.o [1]
+  .rodata             const    0x080085bc    0x18  escore-i2c.o [1]
+  .rodata             const    0x080085d4    0x18  escore-i2c.o [1]
+  .rodata             const    0x080085ec    0x18  escore-uart-common.o [1]
+  .rodata             const    0x08008604    0x18  escore-uart-common.o [1]
+  .rodata             const    0x0800861c    0x18  escore-uart.o [1]
+  .rodata             const    0x08008634    0x18  escore-uart.o [1]
+  .rodata             const    0x0800864c    0x18  escore-uart.o [1]
+  .rodata             const    0x08008664    0x18  escore-uart.o [1]
+  .rodata             const    0x0800867c    0x18  escore-vs.o [1]
+  .rodata             const    0x08008694    0x18  escore-vs.o [1]
+  .rodata             const    0x080086ac    0x18  escore-vs.o [1]
+  .rodata             const    0x080086c4    0x18  escore-vs.o [1]
+  .rodata             const    0x080086dc    0x18  escore.o [1]
+  .rodata             const    0x080086f4    0x18  escore.o [1]
+  .rodata             const    0x0800870c    0x18  escore.o [1]
+  .rodata             const    0x08008724    0x18  main.o [1]
+  .text               ro code  0x0800873c    0x16  xprout.o [3]
+  .text               ro code  0x08008754     0xc  putchar.o [3]
+  .rodata             const    0x08008760    0x14  es705_escore.o [1]
+  .rodata             const    0x08008774    0x14  es705_escore.o [1]
+  .rodata             const    0x08008788    0x14  escore-uart-common.o [1]
+  .rodata             const    0x0800879c    0x14  escore-uart.o [1]
+  .rodata             const    0x080087b0    0x14  escore-uart.o [1]
+  .rodata             const    0x080087c4    0x14  escore-uart.o [1]
+  .rodata             const    0x080087d8    0x14  escore-uart.o [1]
+  .rodata             const    0x080087ec    0x14  escore-vs.o [1]
+  .rodata             const    0x08008800    0x14  escore.o [1]
+  .rodata             const    0x08008814    0x14  escore.o [1]
+  .rodata             const    0x08008828    0x14  main.o [1]
+  .rodata             const    0x0800883c    0x14  main.o [1]
+  .rodata             const    0x08008850    0x10  es705_escore.o [1]
+  .rodata             const    0x08008860    0x10  es705_escore.o [1]
+  .rodata             const    0x08008870    0x10  es705_escore.o [1]
+  .rodata             const    0x08008880    0x10  es705_escore.o [1]
+  .rodata             const    0x08008890    0x10  es705_escore.o [1]
+  .rodata             const    0x080088a0    0x10  escore-uart-common.o [1]
+  .rodata             const    0x080088b0    0x10  escore-uart.o [1]
+  .rodata             const    0x080088c0    0x10  escore.o [1]
+  .rodata             const    0x080088d0    0x10  ff.o [1]
+  .rodata             const    0x080088e0    0x10  stm32f10x_rcc.o [1]
+  .rodata             const    0x080088f0     0xc  es705_escore.o [1]
+  .rodata             const    0x080088fc     0xc  es705_escore.o [1]
+  .rodata             const    0x08008908     0xc  es705_escore.o [1]
+  .rodata             const    0x08008914     0xc  es705_escore.o [1]
+  .rodata             const    0x08008920     0xc  es705_escore.o [1]
+  .rodata             const    0x0800892c     0xc  escore-i2c.o [1]
+  .rodata             const    0x08008938     0xc  escore-vs.o [1]
+  .rodata             const    0x08008944     0xc  escore-vs.o [1]
+  .text               ro code  0x08008950     0xc  cstartup_M.o [5]
+  .rodata             const    0x0800895c     0x8  es705_escore.o [1]
+  .rodata             const    0x08008964     0x8  es705_escore.o [1]
+  .rodata             const    0x0800896c     0x8  escore-vs.o [1]
+  .rodata             const    0x08008974     0x8  escore-vs.o [1]
+  .rodata             const    0x0800897c     0x4  stm32f10x_rcc.o [1]
+  .rodata             const    0x08008980     0x0  zero_init3.o [5]
+  .rodata             const    0x08008980     0x0  packbits_init.o [5]
+  Initializer bytes   ro data  0x08008980   0x133  <for P2 s0>
+                             - 0x08008ab3  0x8983
+
+"P2":                                      0x5a28
+  P2 s0                        0x20000000   0x47c  <Init block>
+    .data             inited   0x20000000   0x318  es705_escore.o [1]
+    __DLIB_PERTHREAD  inited   0x20000318    0x88  localeconv.o [3]
+    __DLIB_PERTHREAD  inited   0x200003a0    0x74  setlocale.o [3]
+    .data             inited   0x20000414    0x40  xfiles.o [3]
+    .data             inited   0x20000454    0x24  escore-uart.o [1]
+    .data             inited   0x20000478     0x4  escore-uart.o [1]
+  .bss                zero     0x2000047c  0x1030  main.o [1]
+  .bss                zero     0x200014ac  0x1000  es705_escore.o [1]
+  .bss                zero     0x200024ac  0x1000  escore-uart-common.o [1]
+  .bss                zero     0x200034ac   0x200  escore-uart-common.o [1]
+  .bss                zero     0x200036ac   0x190  escore.o [1]
+  .bss                zero     0x2000383c    0xe8  es705_escore.o [1]
+  .bss                zero     0x20003924    0x50  xfiles.o [3]
+  .bss                zero     0x20003974    0x2c  escore-vs.o [1]
+  .bss                zero     0x200039a0    0x20  GloblDef.o [1]
+  .bss                zero     0x200039c0    0x10  escore-uart.o [1]
+  .bss                zero     0x200039d0    0x10  I2C.o [1]
+  .bss                zero     0x200039e0     0xc  escore-uart.o [1]
+  .bss                zero     0x200039ec     0x8  es705_escore.o [1]
+  .bss                zero     0x200039f4     0x8  xxmemxmalloc.o [3]
+  .bss                zero     0x200039fc     0x4  escore-uart.o [1]
+  .bss                zero     0x20003a00     0x4  escore.o [1]
+  .bss                zero     0x20003a04     0x4  escore.o [1]
+  .bss                zero     0x20003a08     0x4  ff.o [1]
+  .bss                zero     0x20003a0c     0x4  GloblDef.o [1]
+  .bss                zero     0x20003a10     0x4  GloblDef.o [1]
+  .bss                zero     0x20003a14     0x4  GloblDef.o [1]
+  .bss                zero     0x20003a18     0x4  main.o [1]
+  .bss                zero     0x20003a1c     0x4  xgetmemchunk.o [3]
+  .bss                zero     0x20003a20     0x2  ff.o [1]
+  .bss                zero     0x20003a22     0x1  GloblDef.o [1]
+  CSTACK                       0x20003a28  0x1000  <Block>
+    CSTACK            uninit   0x20003a28  0x1000  <Block tail>
+  HEAP                         0x20004a28  0x1000  <Block>
+    HEAP              uninit   0x20004a28  0x1000  <Block tail>
+                             - 0x20005a28  0x5a28
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x35a7:
+          0x2000047c  0x35a7
+
+Copy/packbits (__iar_packbits_init3)
+    1 source range, total size 0x133 (26% of destination):
+          0x08008980   0x133
+    1 destination range, total size 0x47c:
+          0x20000000   0x47c
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                 ro code  ro data  rw data
+    ------                 -------  -------  -------
+F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj: [1]
+    GloblDef.o                                    45
+    I2C.o                      172                16
+    SPI_Flash.o                732
+    bsp.o                      956
+    cortexm3_macro.o           122
+    diskio.o                   152
+    es705_escore.o           2 428    1 491    5 128
+    escore-i2c.o             1 080      388
+    escore-uart-common.o       632      176    4 608
+    escore-uart.o            2 020      811       72
+    escore-vs.o              1 252      888       44
+    escore.o                 1 756      824      408
+    ff.o                     6 352       16        6
+    main.o                     344      176    4 148
+    printf.o                    40
+    stm32f10x_dma.o             76
+    stm32f10x_exti.o           212
+    stm32f10x_flash.o           68
+    stm32f10x_gpio.o           408
+    stm32f10x_i2c.o            584
+    stm32f10x_it.o             438
+    stm32f10x_nvic.o           356
+    stm32f10x_rcc.o            860       20
+    stm32f10x_spi.o            124
+    stm32f10x_systick.o        132
+    stm32f10x_tim.o             58
+    stm32f10x_usart.o          482
+    stm32f10x_vector.o                  304
+    ------------------------------------------------
+    Total:                  21 836    5 094   14 475
+
+command line: [2]
+    ------------------------------------------------
+    Total:
+
+dl7M_tlf.a: [3]
+    abort.o                      6
+    div.o                       14
+    exit.o                       4
+    localeconv.o               108       37      136
+    low_level_init.o             4
+    printf.o                    36
+    putchar.o                   12
+    setlocale.o                 20       31      116
+    strstr.o                    44
+    xencoding_sb.o              96
+    xfiles.o                             17      144
+    xgetmemchunk.o              44                 4
+    xmbcurmax.o                 10
+    xmbtowc.o                   32
+    xprintffull.o            4 430
+    xprout.o                    22
+    xtls.o                       2
+    xwctomb.o                   26
+    xxmemxfree.o               128
+    xxmemxmalloc.o             176                 8
+    ------------------------------------------------
+    Total:                   5 214       85      408
+
+m7M_tl.a: [4]
+    DblAdd.o                   212
+    DblCmpGe.o                  46
+    DblCmpLe.o                  46
+    DblDiv.o                   582
+    DblMul.o                   418
+    DblSub.o                   384
+    DblToI32.o                  88
+    I32ToDbl.o                  48
+    xdnorm.o                    66
+    xdscale.o                  268
+    ------------------------------------------------
+    Total:                   2 158
+
+rt7M_tl.a: [5]
+    ABImemclr4.o                 6
+    ABImemcpy_unaligned.o      118
+    ABImemset.o                102
+    ABImemset48.o               50
+    I64DivMod.o                238
+    I64DivZer.o                  2
+    cexit.o                     10
+    cmain.o                     26
+    cstartup_M.o                12
+    data_init.o                 40
+    memchr.o                    88
+    packbits_init.o            210
+    strchr.o                    22
+    strlen.o                    54
+    zero_init3.o                34
+    ------------------------------------------------
+    Total:                   1 012
+
+shb_l.a: [6]
+    exit.o                      20
+    ------------------------------------------------
+    Total:                      20
+
+    Gaps                        40        4
+    Linker created                       44    8 192
+----------------------------------------------------
+    Grand Total:            30 280    5 227   23 075
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address    Size  Type      Object
+-----                      -------    ----  ----      ------
+?main                   0x080084cd          Code  Gb  cmain.o [5]
+ADC1_2_IRQHandler       0x08007373     0x2  Code  Gb  stm32f10x_it.o [1]
+ADC3_IRQHandler         0x0800747f     0x2  Code  Gb  stm32f10x_it.o [1]
+ADCPrescTable           0x0800897c     0x4  Data  Lc  stm32f10x_rcc.o [1]
+APBAHBPrescTable        0x080088e0    0x10  Data  Lc  stm32f10x_rcc.o [1]
+BusFaultException       0x0800732b     0x2  Code  Gb  stm32f10x_it.o [1]
+CAN_RX1_IRQHandler      0x08007379     0x2  Code  Gb  stm32f10x_it.o [1]
+CAN_SCE_IRQHandler      0x0800737b     0x2  Code  Gb  stm32f10x_it.o [1]
+CSTACK$$Base            0x20003a28           --   Gb  - Linker created -
+CSTACK$$Limit           0x20004a28           --   Gb  - Linker created -
+DMA1_Channel1_IRQHandler
+                        0x08007353    0x14  Code  Gb  stm32f10x_it.o [1]
+DMA1_Channel2_IRQHandler
+                        0x08007367     0x2  Code  Gb  stm32f10x_it.o [1]
+DMA1_Channel3_IRQHandler
+                        0x08007369     0x2  Code  Gb  stm32f10x_it.o [1]
+DMA1_Channel4_IRQHandler
+                        0x0800736b     0x2  Code  Gb  stm32f10x_it.o [1]
+DMA1_Channel5_IRQHandler
+                        0x0800736d     0x2  Code  Gb  stm32f10x_it.o [1]
+DMA1_Channel6_IRQHandler
+                        0x0800736f     0x2  Code  Gb  stm32f10x_it.o [1]
+DMA1_Channel7_IRQHandler
+                        0x08007371     0x2  Code  Gb  stm32f10x_it.o [1]
+DMA2_Channel1_IRQHandler
+                        0x080074d3     0x2  Code  Gb  stm32f10x_it.o [1]
+DMA2_Channel2_IRQHandler
+                        0x080074d5     0x2  Code  Gb  stm32f10x_it.o [1]
+DMA2_Channel3_IRQHandler
+                        0x080074d7     0x2  Code  Gb  stm32f10x_it.o [1]
+DMA2_Channel4_5_IRQHandler
+                        0x080074d9     0x2  Code  Gb  stm32f10x_it.o [1]
+DMA_ClearITPendingBit   0x08007507    0x10  Code  Gb  stm32f10x_dma.o [1]
+DMA_GetITStatus         0x080074dd    0x2a  Code  Gb  stm32f10x_dma.o [1]
+DebugMonitor            0x0800732f     0x2  Code  Gb  stm32f10x_it.o [1]
+EXTI0_IRQHandler        0x08007349     0x2  Code  Gb  stm32f10x_it.o [1]
+EXTI15_10_IRQHandler    0x0800745b    0x18  Code  Gb  stm32f10x_it.o [1]
+EXTI1_IRQHandler        0x0800734b     0x2  Code  Gb  stm32f10x_it.o [1]
+EXTI2_IRQHandler        0x0800734d     0x2  Code  Gb  stm32f10x_it.o [1]
+EXTI3_IRQHandler        0x0800734f     0x2  Code  Gb  stm32f10x_it.o [1]
+EXTI4_IRQHandler        0x08007351     0x2  Code  Gb  stm32f10x_it.o [1]
+EXTI9_5_IRQHandler      0x0800737d    0x26  Code  Gb  stm32f10x_it.o [1]
+EXTI_ClearFlag          0x0800727b     0x6  Code  Gb  stm32f10x_exti.o [1]
+EXTI_ClearITPendingBit  0x080072a9     0x6  Code  Gb  stm32f10x_exti.o [1]
+EXTI_GetITStatus        0x08007281    0x28  Code  Gb  stm32f10x_exti.o [1]
+EXTI_Init               0x080071f1    0x8a  Code  Gb  stm32f10x_exti.o [1]
+FLASH_IRQHandler        0x08007345     0x2  Code  Gb  stm32f10x_it.o [1]
+FLASH_PrefetchBufferCmd
+                        0x08006fe5    0x20  Code  Gb  stm32f10x_flash.o [1]
+FLASH_SetLatency        0x08006fc5    0x20  Code  Gb  stm32f10x_flash.o [1]
+FSMC_IRQHandler         0x08007481     0x2  Code  Gb  stm32f10x_it.o [1]
+FatFs                   0x20003a08     0x4  Data  Lc  ff.o [1]
+Fsid                    0x20003a20     0x2  Data  Lc  ff.o [1]
+GPIO_Configuration      0x08006a03   0x190  Code  Gb  bsp.o [1]
+GPIO_EXTILineConfig     0x08001eb7    0x50  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_Init               0x08001d75   0x136  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_ResetBits          0x08001eb1     0x6  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_SetBits            0x08001eab     0x6  Code  Gb  stm32f10x_gpio.o [1]
+HEAP$$Base              0x20004a28           --   Gb  - Linker created -
+HEAP$$Limit             0x20005a28           --   Gb  - Linker created -
+HardFaultException      0x08007327     0x2  Code  Gb  stm32f10x_it.o [1]
+I2C1_ER_IRQHandler      0x080073ed     0x2  Code  Gb  stm32f10x_it.o [1]
+I2C1_EV_IRQHandler      0x080073eb     0x2  Code  Gb  stm32f10x_it.o [1]
+I2C1_ReadByte           0x080057c1    0x90  Code  Gb  escore-i2c.o [1]
+I2C1_WriteByte          0x0800573d    0x84  Code  Gb  escore-i2c.o [1]
+I2C2_ER_IRQHandler      0x080073f1     0x2  Code  Gb  stm32f10x_it.o [1]
+I2C2_EV_IRQHandler      0x080073ef     0x2  Code  Gb  stm32f10x_it.o [1]
+I2C_AcknowledgeConfig   0x0800663d    0x1c  Code  Gb  stm32f10x_i2c.o [1]
+I2C_CheckEvent          0x0800667b    0x38  Code  Gb  stm32f10x_i2c.o [1]
+I2C_Cmd                 0x080065e9    0x1c  Code  Gb  stm32f10x_i2c.o [1]
+I2C_DeInit              0x080064a1    0x42  Code  Gb  stm32f10x_i2c.o [1]
+I2C_GenerateSTART       0x08006605    0x1c  Code  Gb  stm32f10x_i2c.o [1]
+I2C_GenerateSTOP        0x08006621    0x1c  Code  Gb  stm32f10x_i2c.o [1]
+I2C_GetFlagStatus       0x080066b3    0x36  Code  Gb  stm32f10x_i2c.o [1]
+I2C_Init                0x080064e3    0xf2  Code  Gb  stm32f10x_i2c.o [1]
+I2C_InitStructure       0x200039d0    0x10  Data  Gb  I2C.o [1]
+I2C_Init_sub            0x08006d1d    0x94  Code  Gb  I2C.o [1]
+I2C_ReceiveData         0x0800665f     0x6  Code  Gb  stm32f10x_i2c.o [1]
+I2C_Send7bitAddress     0x08006665    0x16  Code  Gb  stm32f10x_i2c.o [1]
+I2C_SendData            0x08006659     0x6  Code  Gb  stm32f10x_i2c.o [1]
+InStream_Read           0x08007563    0x22  Code  Lc  packbits_init.o [5]
+LoadInt                 0x08002915    0x6e  Code  Lc  xprintffull.o [3]
+MemManageException      0x08007329     0x2  Code  Gb  stm32f10x_it.o [1]
+ModelBuff               0x200014ac  0x1000  Data  Gb  es705_escore.o [1]
+NMIException            0x08007325     0x2  Code  Gb  stm32f10x_it.o [1]
+NVIC_Configuration      0x08006b93    0x7a  Code  Gb  bsp.o [1]
+NVIC_Init               0x08007017    0xa8  Code  Gb  stm32f10x_nvic.o [1]
+NVIC_PriorityGroupConfig
+                        0x08007009     0xe  Code  Gb  stm32f10x_nvic.o [1]
+NVIC_SetVectorTable     0x080070bf     0xc  Code  Gb  stm32f10x_nvic.o [1]
+NVIC_SystemHandlerPriorityConfig
+                        0x080070cb    0x80  Code  Gb  stm32f10x_nvic.o [1]
+OutPutFile              0x08006401    0x78  Code  Gb  main.o [1]
+PVD_IRQHandler          0x0800733f     0x2  Code  Gb  stm32f10x_it.o [1]
+PendSVC                 0x08007333     0x2  Code  Gb  stm32f10x_it.o [1]
+RCC_ADCCLKConfig        0x08002083    0x14  Code  Gb  stm32f10x_rcc.o [1]
+RCC_APB1PeriphClockCmd  0x08002191    0x1e  Code  Gb  stm32f10x_rcc.o [1]
+RCC_APB1PeriphResetCmd  0x080021af    0x1e  Code  Gb  stm32f10x_rcc.o [1]
+RCC_APB2PeriphClockCmd  0x08002173    0x1e  Code  Gb  stm32f10x_rcc.o [1]
+RCC_ClearFlag           0x0800221d     0xe  Code  Gb  stm32f10x_rcc.o [1]
+RCC_Configuration       0x08006961    0xa2  Code  Gb  bsp.o [1]
+RCC_DeInit              0x08001f0d    0x5e  Code  Gb  stm32f10x_rcc.o [1]
+RCC_GetClocksFreq       0x08002097    0xdc  Code  Gb  stm32f10x_rcc.o [1]
+RCC_GetFlagStatus       0x080021cd    0x50  Code  Gb  stm32f10x_rcc.o [1]
+RCC_GetSYSCLKSource     0x0800203b     0xa  Code  Gb  stm32f10x_rcc.o [1]
+RCC_HCLKConfig          0x08002045    0x14  Code  Gb  stm32f10x_rcc.o [1]
+RCC_HSEConfig           0x08001f6b    0x56  Code  Gb  stm32f10x_rcc.o [1]
+RCC_IRQHandler          0x08007347     0x2  Code  Gb  stm32f10x_it.o [1]
+RCC_PCLK1Config         0x08002059    0x14  Code  Gb  stm32f10x_rcc.o [1]
+RCC_PCLK2Config         0x0800206d    0x16  Code  Gb  stm32f10x_rcc.o [1]
+RCC_PLLCmd              0x0800201d     0xa  Code  Gb  stm32f10x_rcc.o [1]
+RCC_PLLConfig           0x08002001    0x1c  Code  Gb  stm32f10x_rcc.o [1]
+RCC_SYSCLKConfig        0x08002027    0x14  Code  Gb  stm32f10x_rcc.o [1]
+RCC_WaitForHSEStartUp   0x08001fc1    0x40  Code  Gb  stm32f10x_rcc.o [1]
+RTCAlarm_IRQHandler     0x08007473     0x2  Code  Gb  stm32f10x_it.o [1]
+RTC_IRQHandler          0x08007343     0x2  Code  Gb  stm32f10x_it.o [1]
+ReadBuf_CO2             0x200039a0    0x20  Data  Gb  GloblDef.o [1]
+Received_Over_Flag_co2  0x20003a14     0x4  Data  Gb  GloblDef.o [1]
+Received_Over_time_co2  0x20003a10     0x4  Data  Gb  GloblDef.o [1]
+Received_pt_co2         0x20003a22     0x1  Data  Gb  GloblDef.o [1]
+Region$$Table$$Base     0x08007cf4           --   Gb  - Linker created -
+Region$$Table$$Limit    0x08007d20           --   Gb  - Linker created -
+RxBuf                   0x200024ac  0x1000  Data  Gb  escore-uart-common.o [1]
+SDIO_IRQHandler         0x08007483     0x2  Code  Gb  stm32f10x_it.o [1]
+SPI1_IRQHandler         0x080073f3     0x2  Code  Gb  stm32f10x_it.o [1]
+SPI2_IRQHandler         0x080073f5     0x2  Code  Gb  stm32f10x_it.o [1]
+SPI3_IRQHandler         0x08007487     0x2  Code  Gb  stm32f10x_it.o [1]
+SPI_Cmd                 0x080022a9    0x1c  Code  Gb  stm32f10x_spi.o [1]
+SPI_Flash_Init          0x08001c8b    0xa0  Code  Gb  SPI_Flash.o [1]
+SPI_Flash_ReadByte      0x08001d2b     0xa  Code  Gb  SPI_Flash.o [1]
+SPI_Flash_SendByte      0x08001d35    0x32  Code  Gb  SPI_Flash.o [1]
+SPI_I2S_GetFlagStatus   0x080022cd    0x18  Code  Gb  stm32f10x_spi.o [1]
+SPI_I2S_ReceiveData     0x080022c9     0x4  Code  Gb  stm32f10x_spi.o [1]
+SPI_I2S_SendData        0x080022c5     0x4  Code  Gb  stm32f10x_spi.o [1]
+SPI_Init                0x08002269    0x40  Code  Gb  stm32f10x_spi.o [1]
+SST25_R_BLOCK           0x08001b43    0x4e  Code  Gb  SPI_Flash.o [1]
+SST25_W_BLOCK           0x08001b91    0xba  Code  Gb  SPI_Flash.o [1]
+SVCHandler              0x08007331     0x2  Code  Gb  stm32f10x_it.o [1]
+SysTickHandler          0x08007335     0x8  Code  Gb  stm32f10x_it.o [1]
+SysTick_CLKSourceConfig
+                        0x0800716d    0x20  Code  Gb  stm32f10x_systick.o [1]
+SysTick_Config          0x08006c0d    0x1c  Code  Gb  bsp.o [1]
+SysTick_CounterCmd      0x08007193    0x2e  Code  Gb  stm32f10x_systick.o [1]
+SysTick_ITConfig        0x080071c1    0x22  Code  Gb  stm32f10x_systick.o [1]
+SysTick_SetReload       0x0800718d     0x6  Code  Gb  stm32f10x_systick.o [1]
+TAMPER_IRQHandler       0x08007341     0x2  Code  Gb  stm32f10x_it.o [1]
+TIM1_BRK_IRQHandler     0x080073a3     0x2  Code  Gb  stm32f10x_it.o [1]
+TIM1_CC_IRQHandler      0x080073a9     0x2  Code  Gb  stm32f10x_it.o [1]
+TIM1_TRG_COM_IRQHandler
+                        0x080073a7     0x2  Code  Gb  stm32f10x_it.o [1]
+TIM1_UP_IRQHandler      0x080073a5     0x2  Code  Gb  stm32f10x_it.o [1]
+TIM2_IRQHandler         0x080073ab    0x26  Code  Gb  stm32f10x_it.o [1]
+TIM3_IRQHandler         0x080073d1    0x18  Code  Gb  stm32f10x_it.o [1]
+TIM4_IRQHandler         0x080073e9     0x2  Code  Gb  stm32f10x_it.o [1]
+TIM5_IRQHandler         0x08007485     0x2  Code  Gb  stm32f10x_it.o [1]
+TIM6_IRQHandler         0x080074cf     0x2  Code  Gb  stm32f10x_it.o [1]
+TIM7_IRQHandler         0x080074d1     0x2  Code  Gb  stm32f10x_it.o [1]
+TIM8_BRK_IRQHandler     0x08007477     0x2  Code  Gb  stm32f10x_it.o [1]
+TIM8_CC_IRQHandler      0x0800747d     0x2  Code  Gb  stm32f10x_it.o [1]
+TIM8_TRG_COM_IRQHandler
+                        0x0800747b     0x2  Code  Gb  stm32f10x_it.o [1]
+TIM8_UP_IRQHandler      0x08007479     0x2  Code  Gb  stm32f10x_it.o [1]
+TIM_ClearITPendingBit   0x0800755b     0x8  Code  Gb  stm32f10x_tim.o [1]
+TIM_GetITStatus         0x08007529    0x32  Code  Gb  stm32f10x_tim.o [1]
+TimingDelay             0x20003a04     0x4  Data  Gb  escore.o [1]
+TimingDelay_Decrement   0x08004bcb    0x1a  Code  Gb  escore.o [1]
+UART4_IRQHandler        0x08007489    0x1c  Code  Gb  stm32f10x_it.o [1]
+UART5_IRQHandler        0x080074cd     0x2  Code  Gb  stm32f10x_it.o [1]
+USART1_IRQHandler       0x080073f7    0x24  Code  Gb  stm32f10x_it.o [1]
+USART2_IRQHandler       0x0800741b    0x3e  Code  Gb  stm32f10x_it.o [1]
+USART3_IRQHandler       0x08007459     0x2  Code  Gb  stm32f10x_it.o [1]
+USART_ClearITPendingBit
+                        0x08006f9f    0x24  Code  Gb  stm32f10x_usart.o [1]
+USART_Cmd               0x08006e91    0x1c  Code  Gb  stm32f10x_usart.o [1]
+USART_GetFlagStatus     0x08006f13    0x1e  Code  Gb  stm32f10x_usart.o [1]
+USART_GetITStatus       0x08006f31    0x6e  Code  Gb  stm32f10x_usart.o [1]
+USART_ITConfig          0x08006ead    0x56  Code  Gb  stm32f10x_usart.o [1]
+USART_Init              0x08006de1    0xac  Code  Gb  stm32f10x_usart.o [1]
+USART_ReceiveData       0x08006f0b     0x8  Code  Gb  stm32f10x_usart.o [1]
+USART_SendData          0x08006f03     0x8  Code  Gb  stm32f10x_usart.o [1]
+USBWakeUp_IRQHandler    0x08007475     0x2  Code  Gb  stm32f10x_it.o [1]
+USB_HP_CAN_TX_IRQHandler
+                        0x08007375     0x2  Code  Gb  stm32f10x_it.o [1]
+USB_LP_CAN_RX0_IRQHandler
+                        0x08007377     0x2  Code  Gb  stm32f10x_it.o [1]
+UsageFaultException     0x0800732d     0x2  Code  Gb  stm32f10x_it.o [1]
+WWDG_IRQHandler         0x0800733d     0x2  Code  Gb  stm32f10x_it.o [1]
+_EncodingSb_Mbtowc      0x08004027    0x30  Code  Gb  xencoding_sb.o [3]
+_EncodingSb_Wctomb      0x0800400d    0x1a  Code  Gb  xencoding_sb.o [3]
+_GenldFull              0x0800319f   0x24c  Code  Lc  xprintffull.o [3]
+_IsdstStr               0x200003a4     0x4  Data  Gb  setlocale.o [3]
+_LdtobFull              0x08002d9d   0x3fc  Code  Lc  xprintffull.o [3]
+_LitobFull              0x08002c95   0x106  Code  Lc  xprintffull.o [3]
+_LocaleEncoding         0x08003ff9     0xe  Code  Gb  setlocale.o [3]
+_LocaleReturnString     0x200003c4    0x50  Data  Lc  setlocale.o [3]
+_Locale_Profile         0x200003a8    0x1c  Data  Gb  setlocale.o [3]
+_Locale_aeabi_lconv     0x20000368    0x38  Data  Gb  localeconv.o [3]
+_Locale_lconv           0x20000318    0x50  Data  Gb  localeconv.o [3]
+_Mbtowc                 0x08003433    0x20  Code  Gb  xmbtowc.o [3]
+_PrintfFull             0x080022e5   0x618  Code  Gb  xprintffull.o [3]
+_Prout                  0x0800873d    0x16  Code  Gb  xprout.o [3]
+_PutcharsFull           0x080033eb    0x2e  Code  Lc  xprintffull.o [3]
+_PutstrFull             0x08002983   0x30c  Code  Lc  xprintffull.o [3]
+_TzoneStr               0x200003a0     0x4  Data  Gb  setlocale.o [3]
+_Wctomb                 0x080035d9    0x1a  Code  Gb  xwctomb.o [3]
+__BASEPRICONFIG         0x080076b7          Code  Gb  cortexm3_macro.o [1]
+__DMB                   0x08007669          Code  Gb  cortexm3_macro.o [1]
+__DSB                   0x08007663          Code  Gb  cortexm3_macro.o [1]
+__GetBASEPRI            0x080076bd          Code  Gb  cortexm3_macro.o [1]
+__ISB                   0x0800765d          Code  Gb  cortexm3_macro.o [1]
+__MRS_CONTROL           0x08007673          Code  Gb  cortexm3_macro.o [1]
+__MRS_MSP               0x0800768f          Code  Gb  cortexm3_macro.o [1]
+__MRS_PSP               0x08007683          Code  Gb  cortexm3_macro.o [1]
+__MSR_CONTROL           0x08007679          Code  Gb  cortexm3_macro.o [1]
+__MSR_MSP               0x08007695          Code  Gb  cortexm3_macro.o [1]
+__MSR_PSP               0x08007689          Code  Gb  cortexm3_macro.o [1]
+__READ_FAULTMASK        0x080076b1          Code  Gb  cortexm3_macro.o [1]
+__READ_PRIMASK          0x080076a3          Code  Gb  cortexm3_macro.o [1]
+__RESETFAULTMASK        0x080076a9          Code  Gb  cortexm3_macro.o [1]
+__RESETPRIMASK          0x0800769b          Code  Gb  cortexm3_macro.o [1]
+__REV_HalfWord          0x080076c3          Code  Gb  cortexm3_macro.o [1]
+__REV_Word              0x080076c7          Code  Gb  cortexm3_macro.o [1]
+__SETFAULTMASK          0x080076ad          Code  Gb  cortexm3_macro.o [1]
+__SETPRIMASK            0x0800769f          Code  Gb  cortexm3_macro.o [1]
+__SEV                   0x08007659          Code  Gb  cortexm3_macro.o [1]
+__SVC                   0x0800766f          Code  Gb  cortexm3_macro.o [1]
+__WFE                   0x08007655          Code  Gb  cortexm3_macro.o [1]
+__WFI                   0x08007651          Code  Gb  cortexm3_macro.o [1]
+__aeabi_cdcmple         0x0800381d          Code  Gb  DblCmpLe.o [4]
+__aeabi_cdrcmple        0x0800384d          Code  Gb  DblCmpGe.o [4]
+__aeabi_d2iz            0x08003989          Code  Gb  DblToI32.o [4]
+__aeabi_d2uiz           0x080039b5          Code  Gb  DblToI32.o [4]
+__aeabi_ddiv            0x08003d35          Code  Gb  DblDiv.o [4]
+__aeabi_dmul            0x08003b91          Code  Gb  DblMul.o [4]
+__aeabi_dsub            0x08003a11          Code  Gb  DblSub.o [4]
+__aeabi_i2d             0x080039e1          Code  Gb  I32ToDbl.o [4]
+__aeabi_ldiv0           0x08004099          Code  Gb  I64DivZer.o [5]
+__aeabi_memclr4         0x08006dc9          Code  Gb  ABImemclr4.o [5]
+__aeabi_memset          0x08004b15          Code  Gb  ABImemset.o [5]
+__aeabi_ui2d            0x080039f5          Code  Gb  I32ToDbl.o [4]
+__aeabi_uldivmod        0x080036ed          Code  Gb  I64DivMod.o [5]
+__as_entries_start      0xffffffff           --   Gb  command line/config [2]
+__as_table_start        0xffffffff           --   Gb  command line/config [2]
+__cmain                 0x080084cd          Code  Gb  cmain.o [5]
+__data_Aldata           0x200039f4     0x8  Data  Gb  xxmemxmalloc.o [3]
+__data_GetMemChunk      0x0800406d    0x2c  Code  Gb  xgetmemchunk.o [3]
+__exit                  0x0800763d    0x14  Code  Gb  exit.o [6]
+__iar_Dnorm             0x080037db    0x42  Code  Gb  xdnorm.o [4]
+__iar_Dscale            0x0800387d   0x10c  Code  Gb  xdscale.o [4]
+__iar_Locale_lconv_init
+                        0x08003f7d    0x3a  Code  Gb  localeconv.o [3]
+__iar_Mbcurmax          0x0800351d     0xa  Code  Gb  xmbcurmax.o [3]
+__iar_Memchr            0x080034c5          Code  Gb  memchr.o [5]
+__iar_Memset            0x08004b15          Code  Gb  ABImemset.o [5]
+__iar_Memset4_word      0x080072c5          Code  Gb  ABImemset48.o [5]
+__iar_Memset8_word      0x080072c5          Code  Gb  ABImemset48.o [5]
+__iar_Memset_word       0x08004b1d          Code  Gb  ABImemset.o [5]
+__iar_Stdout            0x20000414    0x40  Data  Gb  xfiles.o [3]
+__iar_Strchr            0x08003475          Code  Gb  strchr.o [5]
+__iar_Strstr            0x080072f7    0x2c  Code  Gb  strstr.o [3]
+__iar_d2uiz             0x080039c1          Code  Gb  DblToI32.o [4]
+__iar_dadd              0x0800409d          Code  Gb  DblAdd.o [4]
+__iar_data_init3        0x08007a45    0x28  Code  Gb  data_init.o [5]
+__iar_dlib_perthread_access
+                        0x08004171     0x2  Code  Gb  xtls.o [3]
+__iar_dsub              0x08003a25          Code  Gb  DblSub.o [4]
+__iar_dsubStart         0x08003a37          Code  Gb  DblSub.o [4]
+__iar_packbits_init3    0x08007585    0xb0  Code  Gb  packbits_init.o [5]
+__iar_program_start     0x08008951          Code  Gb  cstartup_M.o [5]
+__iar_ui2d              0x080039f9          Code  Gb  I32ToDbl.o [4]
+__iar_unaligned___aeabi_memcpy
+                        0x080035f5          Code  Gb  ABImemcpy_unaligned.o [5]
+__iar_unaligned___aeabi_memcpy4
+                        0x08003615          Code  Gb  ABImemcpy_unaligned.o [5]
+__iar_unaligned___aeabi_memcpy8
+                        0x08003615          Code  Gb  ABImemcpy_unaligned.o [5]
+__iar_zero_init3        0x08003453    0x22  Code  Gb  zero_init3.o [5]
+__low_level_init        0x080084e7     0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x08000000   0x130  Data  Gb  stm32f10x_vector.o [1]
+_call_main              0x080084d9          Code  Gb  cmain.o [5]
+_escore_cmd             0x08004c21    0x76  Code  Lc  escore.o [1]
+_escore_read            0x08004d77    0x6c  Code  Lc  escore.o [1]
+_escore_write           0x08004e03    0x82  Code  Lc  escore.o [1]
+_exit                   0x080084f1          Code  Gb  cexit.o [5]
+_main                   0x080084e3          Code  Gb  cmain.o [5]
+abort                   0x08007635     0x6  Code  Gb  abort.o [3]
+be32_to_cpu             0x08004bad    0x1e  Code  Gb  escore.o [1]
+buffer                  0x200034ac   0x200  Data  Gb  escore-uart-common.o [1]
+check_fs                0x08000d11    0x7a  Code  Lc  ff.o [1]
+chk_chr                 0x08000187    0x14  Code  Lc  ff.o [1]
+chk_mounted             0x08000d8b   0x45c  Code  Lc  ff.o [1]
+clust2sect              0x080002eb    0x1a  Code  Gb  ff.o [1]
+cmd_hist                0x200036ac   0x190  Data  Gb  escore.o [1]
+cmd_hist_index          0x20003a00     0x4  Data  Gb  escore.o [1]
+commonIT_Config         0x08006c29    0x34  Code  Gb  bsp.o [1]
+convert_model_to_download_format
+                        0x08004803   0x164  Code  Lc  es705_escore.o [1]
+copy_training_model_file_from_es705
+                        0x08004733    0xd0  Code  Gb  es705_escore.o [1]
+cpu_to_be16             0x08004b7d    0x12  Code  Gb  escore.o [1]
+cpu_to_be32             0x08004b8f    0x1e  Code  Gb  escore.o [1]
+create_chain            0x080005f7    0xdc  Code  Lc  ff.o [1]
+create_name             0x08000a5d   0x170  Code  Lc  ff.o [1]
+cticks_5ms              0x20003a0c     0x4  Data  Gb  GloblDef.o [1]
+dir_find                0x0800090f    0x68  Code  Lc  ff.o [1]
+dir_next                0x080007b1   0x15e  Code  Lc  ff.o [1]
+dir_read                0x08000977    0x64  Code  Lc  ff.o [1]
+dir_register            0x080009db    0x82  Code  Lc  ff.o [1]
+dir_sdi                 0x080006d3    0xde  Code  Lc  ff.o [1]
+disk_initialize         0x08001a01     0x6  Code  Gb  diskio.o [1]
+disk_ioctl              0x08001a4d    0x48  Code  Gb  diskio.o [1]
+disk_read               0x08001a0d    0x20  Code  Gb  diskio.o [1]
+disk_status             0x08001a07     0x6  Code  Gb  diskio.o [1]
+disk_write              0x08001a2d    0x20  Code  Gb  diskio.o [1]
+div                     0x08003fe9     0xe  Code  Gb  div.o [3]
+es705_api_access        0x20000000   0x318  Data  Lc  es705_escore.o [1]
+es705_bootup            0x08004307    0x4c  Code  Gb  es705_escore.o [1]
+es705_download_training_bkg
+                        0x080046df    0x2a  Code  Gb  es705_escore.o [1]
+es705_fw_download       0x08004175    0xc8  Code  Lc  es705_escore.o [1]
+es705_fw_version_show   0x080042a3    0x56  Code  Lc  es705_escore.o [1]
+es705_init              0x0800423d    0x66  Code  Lc  es705_escore.o [1]
+es705_interrupt_service
+                        0x080044eb     0xe  Code  Gb  es705_escore.o [1]
+es705_power_transition  0x08004563   0x17c  Code  Lc  es705_escore.o [1]
+es705_start_int_osc     0x080044f9    0x6a  Code  Lc  es705_escore.o [1]
+es705_sync              0x080042f9     0xe  Code  Lc  es705_escore.o [1]
+es705_wakeup            0x08004361    0x12  Code  Lc  es705_escore.o [1]
+escore_cmd              0x08004c97    0x26  Code  Gb  escore.o [1]
+escore_configure_tty    0x080068a3    0x52  Code  Gb  escore-uart-common.o [1]
+escore_cpu_to_i2c       0x08005851     0xe  Code  Lc  escore-i2c.o [1]
+escore_cpu_to_uart      0x08006705     0xe  Code  Gb  escore-uart-common.o [1]
+escore_cvq_sleep_thread
+                        0x08005483    0x4a  Code  Lc  escore-vs.o [1]
+escore_datablock_write  0x08004ed3   0x172  Code  Gb  escore.o [1]
+escore_default_uart_baud
+                        0x20000478     0x4  Data  Lc  escore-uart.o [1]
+escore_i2c_boot_finish  0x08005a49    0x56  Code  Gb  escore-i2c.o [1]
+escore_i2c_boot_setup   0x08005997    0xb2  Code  Gb  escore-i2c.o [1]
+escore_i2c_cmd          0x080058f9    0x9e  Code  Gb  escore-i2c.o [1]
+escore_i2c_init         0x08005ad1    0x2a  Code  Gb  escore-i2c.o [1]
+escore_i2c_read         0x0800586d    0x18  Code  Gb  escore-i2c.o [1]
+escore_i2c_setup_high_bw_intf
+                        0x08005aad    0x24  Code  Lc  escore-i2c.o [1]
+escore_i2c_setup_pri_intf
+                        0x08005a9f     0xe  Code  Lc  escore-i2c.o [1]
+escore_i2c_to_cpu       0x0800585f     0xe  Code  Lc  escore-i2c.o [1]
+escore_i2c_write        0x08005885    0x74  Code  Gb  escore-i2c.o [1]
+escore_is_sleep_aborted
+                        0x08005259    0x14  Code  Gb  escore-vs.o [1]
+escore_pm_get_sync      0x08004c1d     0x4  Code  Gb  escore.o [1]
+escore_pm_put_autosuspend
+                        0x08004c1b     0x2  Code  Gb  escore.o [1]
+escore_prepare_msg      0x08004cbd    0xba  Code  Gb  escore.o [1]
+escore_priv             0x2000383c    0xe8  Data  Gb  es705_escore.o [1]
+escore_probe            0x08005169    0x62  Code  Gb  escore.o [1]
+escore_read             0x08004de3    0x20  Code  Gb  escore.o [1]
+escore_reconfig_intr    0x08004e85    0x4e  Code  Gb  escore.o [1]
+escore_start_int_osc    0x08005067    0x7c  Code  Gb  escore.o [1]
+escore_uart             0x200039e0     0xc  Data  Gb  escore-uart.o [1]
+escore_uart_abort_config
+                        0x08005c4b    0x4c  Code  Lc  escore-uart.o [1]
+escore_uart_boot_finish
+                        0x08005ee7    0xb0  Code  Lc  escore-uart.o [1]
+escore_uart_boot_setup  0x08005c97   0x250  Code  Lc  escore-uart.o [1]
+escore_uart_close       0x08006915    0x20  Code  Gb  escore-uart-common.o [1]
+escore_uart_cmd         0x080067f9    0xaa  Code  Gb  escore-uart-common.o [1]
+escore_uart_open        0x080068f5    0x20  Code  Gb  escore-uart-common.o [1]
+escore_uart_probe       0x08006223    0x6c  Code  Gb  escore-uart.o [1]
+escore_uart_read        0x08006721    0x1a  Code  Gb  escore-uart-common.o [1]
+escore_uart_read_internal
+                        0x080066e9    0x1c  Code  Gb  escore-uart-common.o [1]
+escore_uart_setup_high_bw_intf
+                        0x08005fb3    0x62  Code  Lc  escore-uart.o [1]
+escore_uart_setup_pri_intf
+                        0x08005f97    0x1c  Code  Lc  escore-uart.o [1]
+escore_uart_to_cpu      0x08006713     0xe  Code  Gb  escore-uart-common.o [1]
+escore_uart_wakeup      0x08005bef    0x5c  Code  Lc  escore-uart.o [1]
+escore_uart_write       0x0800673b    0x3e  Code  Gb  escore-uart-common.o [1]
+escore_uart_write_data_block
+                        0x080067e1    0x18  Code  Gb  escore-uart-common.o [1]
+escore_uart_write_file  0x08006779    0x68  Code  Gb  escore-uart-common.o [1]
+escore_uarths_baud      0x20000454    0x24  Data  Lc  escore-uart.o [1]
+escore_voicesense_sleep
+                        0x080054cd     0xc  Code  Lc  escore-vs.o [1]
+escore_vs_init          0x0800563f    0x48  Code  Gb  escore-vs.o [1]
+escore_vs_init_intr     0x0800554d     0x2  Code  Gb  escore-vs.o [1]
+escore_vs_load          0x08005557    0xe8  Code  Gb  escore-vs.o [1]
+escore_vs_sleep         0x0800526d   0x1ac  Code  Lc  escore-vs.o [1]
+escore_vs_sleep_enable  0x0800554f     0x8  Code  Gb  escore-vs.o [1]
+escore_vs_wakeup        0x08005419    0x6a  Code  Gb  escore-vs.o [1]
+escore_vs_write_bkg_and_keywords
+                        0x080054d9    0x74  Code  Gb  escore-vs.o [1]
+escore_wakeup           0x080050e3    0x86  Code  Gb  escore.o [1]
+escore_write            0x08005045    0x22  Code  Gb  escore.o [1]
+exit                    0x080084eb     0x4  Code  Gb  exit.o [3]
+f_close                 0x080018eb    0x1c  Code  Gb  ff.o [1]
+f_mount                 0x08001215    0x32  Code  Gb  ff.o [1]
+f_open                  0x08001261   0x1a6  Code  Gb  ff.o [1]
+f_opendir               0x08001907    0x8a  Code  Gb  ff.o [1]
+f_read                  0x08001407   0x1ee  Code  Gb  ff.o [1]
+f_readdir               0x08001991    0x70  Code  Gb  ff.o [1]
+f_sync                  0x0800184d    0x9e  Code  Gb  ff.o [1]
+f_write                 0x080015f5   0x258  Code  Gb  ff.o [1]
+fifo                    0x200039fc     0x4  Data  Gb  escore-uart.o [1]
+fifo_check              0x08006141    0x24  Code  Gb  escore-uart.o [1]
+fifo_get                0x08006091    0xb0  Code  Gb  escore-uart.o [1]
+fifo_put                0x08006165    0xbe  Code  Gb  escore-uart.o [1]
+follow_path             0x08000c71    0xa0  Code  Lc  ff.o [1]
+fputc                   0x08007a1d    0x28  Code  Gb  printf.o [1]
+free                    0x0800366d    0x7a  Code  Gb  xxmemxfree.o [3]
+fs                      0x2000047c  0x1030  Data  Gb  main.o [1]
+get_fat                 0x08000305   0x11c  Code  Gb  ff.o [1]
+get_fattime             0x08001a95     0x4  Code  Gb  diskio.o [1]
+get_fileinfo            0x08000bcd    0xa4  Code  Lc  ff.o [1]
+init_cycle_buffer       0x08006015    0x7c  Code  Lc  escore-uart.o [1]
+irq_flag                0x20003a18     0x4  Data  Gb  main.o [1]
+localeconv              0x08003fb7    0x16  Code  Gb  localeconv.o [3]
+main                    0x08006359    0xa8  Code  Gb  main.o [1]
+malloc                  0x08003529    0xac  Code  Gb  xxmemxmalloc.o [3]
+mem_cmp                 0x08000163    0x24  Code  Lc  ff.o [1]
+mem_cpy                 0x08000131    0x1c  Code  Lc  ff.o [1]
+mem_set                 0x0800014d    0x16  Code  Lc  ff.o [1]
+memchr                  0x080034c5          Code  Gb  memchr.o [5]
+move_window             0x0800019b    0x78  Code  Lc  ff.o [1]
+msleep                  0x08004be5    0x16  Code  Gb  escore.o [1]
+obuf                    0x20003924    0x50  Data  Lc  xfiles.o [3]
+pdata                   0x200039ec     0x8  Data  Gb  es705_escore.o [1]
+printf                  0x08004af1    0x24  Code  Gb  printf.o [3]
+process_es70x_interrupt
+                        0x08004373   0x178  Code  Gb  es705_escore.o [1]
+put_fat                 0x08000421   0x164  Code  Gb  ff.o [1]
+putchar                 0x08008755     0xc  Code  Gb  putchar.o [3]
+rdsr                    0x08001b1f    0x24  Code  Gb  SPI_Flash.o [1]
+remove_chain            0x08000585    0x72  Code  Lc  ff.o [1]
+sect_clr                0x08001c4b    0x40  Code  Gb  SPI_Flash.o [1]
+setVoiceSenseTrainingRoutes
+                        0x08004709    0x2a  Code  Gb  es705_escore.o [1]
+set_es705_to_training_mode
+                        0x08004967    0xa2  Code  Gb  es705_escore.o [1]
+set_es705_vq_mode       0x08004353     0xe  Code  Gb  es705_escore.o [1]
+set_sbl_baud_rate       0x08005b75    0x7a  Code  Lc  escore-uart.o [1]
+strchr                  0x08003475          Code  Gb  strchr.o [5]
+strlen                  0x0800348d          Code  Gb  strlen.o [5]
+strstr                  0x08006dcf    0x10  Code  Gb  main.o [1]
+sync                    0x08000213    0xd8  Code  Lc  ff.o [1]
+tx                      0x200039c0    0x10  Data  Gb  escore-uart.o [1]
+uart_config             0x08006c5d    0xa0  Code  Gb  bsp.o [1]
+usleep_range            0x08004bfb    0x20  Code  Gb  escore.o [1]
+validate                0x080011e7    0x2e  Code  Lc  ff.o [1]
+voice_sense_data        0x20003974    0x2c  Data  Gb  escore-vs.o [1]
+wdis                    0x08001ab3    0x1e  Code  Gb  SPI_Flash.o [1]
+wen                     0x08001a99    0x1a  Code  Gb  SPI_Flash.o [1]
+wip                     0x08001b0b    0x14  Code  Gb  SPI_Flash.o [1]
+wsr                     0x08001ad1    0x3a  Code  Gb  SPI_Flash.o [1]
+
+
+[1] = F:\zhao\item20150407\STM32F103xV1.1\DreamFlows\Debug\Obj
+[2] = command line
+[3] = dl7M_tlf.a
+[4] = m7M_tl.a
+[5] = rt7M_tl.a
+[6] = shb_l.a
+
+  30 280 bytes of readonly  code memory
+   5 227 bytes of readonly  data memory
+  23 075 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
